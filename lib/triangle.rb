@@ -11,6 +11,6 @@ class Triangle
   end
 
   def kind
-
+    if self.sorted[0] + self.sorted[1] <= self.sorted[2] || self.sorted.any? {|side| side <= 0}
   end
 end
