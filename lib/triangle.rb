@@ -9,4 +9,8 @@ class Triangle
     @bottom_side = bottom_side
     @sorted = [@right_Side, @left_side, @bottom_side].sort
   end
+
+  def kind
+    
+  end
 end
