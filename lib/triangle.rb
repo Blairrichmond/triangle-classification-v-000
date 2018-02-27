@@ -12,5 +12,20 @@ class Triangle
 
   def kind
     if self.sorted[0] + self.sorted[1] <= self.sorted[2] || self.sorted.any? {|side| side <= 0}
+      raise TriangleError
+    else
+      case self.sorted.uniq.length
+      when 1
+        :equilateral
+      when 2
+        :isosceles
+      when 3
+        :scalene
+      end
+    end
+  end
+  end
+
+  def TriangleError < StandardError
   end
 end
