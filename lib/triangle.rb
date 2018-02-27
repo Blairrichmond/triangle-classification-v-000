@@ -22,9 +22,8 @@ class Triangle
       when 3
         :scalene
       end
+      end
     end
-  end
-end
 end
 
   class TriangleError < StandardError
